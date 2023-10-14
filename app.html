@@ -1,0 +1,46 @@
+<!-- app.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Melbourne Restaurants Insight</title>
+  <!-- Include Leaflet CSS and JavaScript -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <!-- Include CSS for custom map styling -->
+  <link rel="stylesheet" href="/Users/mac/Desktop/GEOM90007/a/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Melbourne Restaurants Insight</h1>
+    <!-- Sidebar layout -->
+    <div class="sidebar">
+      <!-- Sidebar inputs for user interaction -->
+      <label>Select Category:</label>
+      <select id="category">
+        <option value="Zoological and Botanical Gardens Operation">Zoological and Botanical Gardens Operation</option>
+        <option value="Other Personal Services n.e.c.">Other Personal Services n.e.c.</option>
+        <option value="Cafes and Restaurants" selected>Cafes and Restaurants</option>
+        <!-- Add more options as needed -->
+      </select>
+    </div>
+    <!-- Main content layout -->
+    <div class="main">
+      <!-- Create tabs for different insights -->
+      <div class="tabs">
+        <div class="tab" id="summary">
+          <h2>Summary</h2>
+          <div id="summaryTable"></div>
+        </div>
+        <div class="tab" id="map">
+          <h2>Map</h2>
+          <div id="mapContainer"></div>
+        </div>
+        <!-- Add more tabs for additional insights -->
+      </div>
+    </div>
+  </div>
+  <!-- JavaScript for Shiny interactivity (to be added later) -->
+  <script src="app.js"></script>
+</body>
+</html>
